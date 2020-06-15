@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stappco.password.sesamo.SetPasswordActivity"
+    android:background="@color/logo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@id/d">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/sesame"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/sesame_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/baloo_bhaina"
+            android:textColor="@color/logo"
+            android:layout_marginTop="40dp"
+            android:textSize="30sp"
+            android:id="@+id/text"
+            android:layout_below="@id/sesame_logo"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/d"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/d"
+        android:background="@color/logo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_your_master_pass"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/baloo_bhaina"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:id="@+id/text1" />
+
+
+        <com.poovam.pinedittextfield.CirclePinField
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="20dp"
+            android:inputType="phone"
+            android:textSize="15sp"
+            app:highlightType="allFields"
+            android:textSelectHandle="@drawable/text_handle"
+            app:noOfFields="4"
+            app:distanceInBetween="10dp"
+            app:fieldColor="@color/white"
+            app:highlightColor="@color/white"
+            app:lineThickness="2dp"
+            app:isCustomBackground="true"
+            app:isCursorEnabled="true"
+            app:bottomTextPaddingDp="1dp"
+            android:background="@color/logo"
+            android:id="@+id/circleField" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circleField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="@string/enter"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@color/white"
+            android:fontFamily="@font/baloo_bhaina"
+            android:textSize="25sp"
+            android:id="@+id/enter_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close_app"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/baloo_bhaina"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="10sp"
+            android:id="@+id/close_app"
+            android:layout_below="@id/enter_btn"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

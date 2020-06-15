@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stappco.password.sesamo.MainActivity"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:background="@color/barra_lateral">
+
+        <com.stappco.password.sesamo.VerticalTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:rotation="180"
+            android:text="@string/my_passowors"
+            android:textColor="@color/logo"
+            android:textSize="21sp" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_delete_black_24dp"
+            android:backgroundTint="@color/grey"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/delete_btn"
+            android:layout_marginLeft="32.5dp"/>
+
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_settings_black_24dp"
+            android:backgroundTint="@color/grey"
+            android:layout_marginBottom="90dp"
+            android:id="@+id/settings_btn"
+            android:layout_marginLeft="32.5dp"/>
+
+
+    </RelativeLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="90dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:measureAllChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="240dp"
+                    android:backgroundTint="@color/black"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/social_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="S"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <com.stappco.password.sesamo.VerticalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/social_media"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:rotation="180"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="240dp"
+                    android:backgroundTint="@color/blue"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/email_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <com.stappco.password.sesamo.VerticalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/emails"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:rotation="180"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="240dp"
+                    android:backgroundTint="@color/yellow"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/bank_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <com.stappco.password.sesamo.VerticalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bank"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:rotation="180"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="240dp"
+                    android:backgroundTint="@color/red"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/ecommerce_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <com.stappco.password.sesamo.VerticalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ecommerce"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:rotation="180"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="240dp"
+                    android:backgroundTint="@color/verde"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/wifi_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="W"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <com.stappco.password.sesamo.VerticalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifi"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:rotation="180"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="240dp"
+                    android:backgroundTint="@color/blue_c"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/website_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="W"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <com.stappco.password.sesamo.VerticalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/website"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:rotation="180"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="240dp"
+                    android:backgroundTint="@color/rosa"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/others_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <com.stappco.password.sesamo.VerticalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/others"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:rotation="180"
+                        android:fontFamily="@font/baloo_bhaina"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sésamo"
+        android:textColor="@color/logo"
+        android:fontFamily="@font/baloo_bhaina"
+        android:textSize="26sp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strong_passwords"
+        android:textColor="@color/logo"
+        android:fontFamily="@font/baloo_bhaina"
+        android:textSize="21sp"
+        android:layout_above="@id/gen"
+        android:layout_marginLeft="120dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/corner"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/gen">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/generate_secure_passwords"
+                android:textColor="@color/white"
+                android:fontFamily="@font/baloo_bhaina"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/text_Gen"
+                android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:id="@+id/pass_gen"/>
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_autorenew_black_24dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_centerVertical="true"
+                android:id="@+id/refresh_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copy"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/baloo_bhaina"
+            android:id="@+id/copy_btn" />
+
+    </RelativeLayout>
+</RelativeLayout>

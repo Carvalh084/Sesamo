@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stappco.password.sesamo.SocialMediaActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/logo">
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/back_btn"
+            android:padding="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/emails"
+            android:layout_alignParentEnd="true"
+            android:textSize="21sp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:textColor="@color/white"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="5dp"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_add_box_black_24dp"
+        android:backgroundTint="@color/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="80dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="140dp"
+        app:cardCornerRadius="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/save_card"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_new_password"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baloo_bhaina"
+                    android:textColor="@color/logo"
+                    android:textSize="18sp"
+                    android:id="@+id/te"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/te"
+                    android:id="@+id/title"
+                    android:layout_margin="20dp"
+                    android:hint="@string/title_ex_gmail"
+                    android:textColorHint="@color/text_barra"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/grey"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:id="@+id/password"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Password"
+                    android:textColorHint="@color/text_barra"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/grey" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password"
+                    android:id="@+id/notes"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/email_address"
+                    android:textColorHint="@color/text_barra"
+                    android:textStyle="bold"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Save"
+                    android:layout_below="@+id/notes"
+                    android:id="@+id/save"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/logo"
+                    android:fontFamily="@font/baloo_bhaina"
+                    android:textSize="30sp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"/>
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ic_close_black_24dp"
+                    android:backgroundTint="@color/logo"
+                    android:layout_marginTop="20dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/close"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

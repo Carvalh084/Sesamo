@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#FC3C02</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="black">#242323</color>
+    <color name="white">#F1E9E6</color>
+    <color name="barra_lateral">#FAE7E0</color>
+    <color name="trans">#007C7C7C</color>
+    <color name="text_barra">#D19090</color>
+    <color name="blue">#413FEE</color>
+    <color name="yellow">#ff9a00</color>
+    <color name="red">#E23A38</color>
+    <color name="logo">#FC3C02</color>
+    <color name="gen">#d30402</color>
+    <color name="verde">#6EC448</color>
+    <color name="rosa">#A8278C</color>
+    <color name="blue_c">#2B8BBE</color>
+    <color name="grey">#b8acac</color>
+    <color name="orange">#8B3424</color>
+
+
+</resources>

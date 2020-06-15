@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sésamo</string>
+    <string name="bank">Banco</string>
+    <string name="copy">COPIAR</string>
+    <string name="ecommerce">E-commerce</string>
+    <string name="emails">Emails</string>
+    <string name="generate_secure_passwords">Gerar Passwords Seguras</string>
+    <string name="my_passowors">Minhas Passwords</string>
+    <string name="others">Outros</string>
+    <string name="social_media">Redes Sociais</string>
+    <string name="strong_passwords">Passwords Seguras</string>
+    <string name="website">Website</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="Save">Guardar</string>
+    <string name="notes">Notas</string>
+    <string name="save_new_password">Guardar Nova Password</string>
+    <string name="title_ex_fb">Título Ex: Facebook</string>
+    <string name="title_ex_gmail">Título Ex: Gmail</string>
+    <string name="email_address">" Endereço de email"</string>
+    <string name="tile">Título</string>
+    <string name="Other_informations">Outras informações</string>
+    <string name="confirm_you_master_password">Confirme a sua password mestre :</string>
+    <string name="confirm">CONFIRMAR</string>
+    <string name="choose_your_master_pass">Escolha a sua password mestre :</string>
+    <string name="welcome">BEM-VINDO</string>
+    <string name="enter_your_master_pass">"Insira a sua password mestre : "</string>
+    <string name="enter">ENTRAR</string>
+    <string name="settings">Definições</string>
+    <string name="rate_us">Avalie-nos</string>
+    <string name="credits">Créditos</string>
+    <string name="change_master_pass">Alterar Password Mestre</string>
+    <string name="old_master_password">Password Mestre Antiga</string>
+    <string name="new_master_password">Password Mestre Nova</string>
+    <string name="confirm_new_master_pass">Confirmar Nova Password Mestre</string>
+    <string name="Change">ALTERAR</string>
+    <string name="close_app">Dica: Feche o tab do aplicativo depois de usar por razoes de segurança</string>
+</resources>

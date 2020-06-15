@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.stappco.password.sesamo.SocialMediaActivity"
+    android:background="@color/white"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginBottom="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/r1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:textColor="#84848d"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:id="@+id/title_text"
+            android:maxLines="1"
+            android:layout_marginRight="20dp"
+            android:singleLine="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="atuaprima"
+                android:textColor="#070b24"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/password_text"
+                android:visibility="invisible"
+                android:layout_below="@id/title_text"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="55dp"
+                android:textIsSelectable="true"/>
+
+        <TextView
+            android:id="@+id/note_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="atuaprimafffff"
+            android:textColor="#070b24"
+            android:textSize="16sp"
+            android:visibility="visible"
+            android:layout_marginRight="55dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_remove_red_eye_black_24dp"
+            android:backgroundTint="#84848d"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/eye"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_visibility_off_black_24dp"
+            android:backgroundTint="#84848d"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/eye_un"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+            </RelativeLayout>
+</androidx.cardview.widget.CardView>
